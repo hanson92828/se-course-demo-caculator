@@ -7,7 +7,7 @@ __pycache__/
 .ruff_cache/
 .coverage
 .venv/
-.env/
+.env
 
 # --- 編輯器相關 ---
 .vscode/
