@@ -6,7 +6,7 @@ def add_func(a: float,b: float) -> float:
     return a+b
 
 def subs_func(a: float,b: float) -> float:
-    return a-b
+    return a-b12
 ''' ------------------------------------- '''
 @app.get("/")
 def home():
