@@ -43,6 +43,7 @@ jobs:
       - name: Deploy Message
         run: echo "CI passed! Deploying to Production Server..."
       
-      # 這裡可以加入真正的部署指令，例如：
-      # 1. 登入 Docker Hub 並 Push Image
-      # 2. 或是使用 SSH 遠端執行 git pull 於伺服器
+      # 使用 curl 觸發 Render 的 Deploy Hook
+      - name: Trigger Render Deploy
+        run: |
+          curl -f -X GET "${{ secrets.RENDER_DEPLOY_HOOK }}"
