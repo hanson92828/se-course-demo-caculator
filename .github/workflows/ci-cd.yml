@@ -7,7 +7,7 @@ on:
     branches: [ main ]  # 當有人發起 PR 到 main 時觸發
 
 jobs:
-  # --- 第一階段：CI (品質保證) ---
+  # --- 第一階段：CI  ---
   quality-check:
     runs-on: ubuntu-latest
     steps:
